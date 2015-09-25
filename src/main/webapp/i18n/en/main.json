@@ -1,0 +1,14 @@
+{
+    "main": {
+        "title": "Abessinia travel & more GmbH",
+        "subtitle": "Customer Contact Management",
+        "logged": {
+            "message": "You are logged in as user \"{{username}}\"."
+        },
+        "question": "If you have any question to Abessinia travel:",
+        "link": {
+            "homepage": "Abessinia travel homepage",
+            "contact": "contact Abessinia travel"
+        }
+      }
+}

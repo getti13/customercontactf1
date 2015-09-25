@@ -1,0 +1,11 @@
+{
+    "customercontactApp": {
+        "PreferedContact" : {
+            "null": "",
+            "Telephone": "Telephone",
+            "Mobile": "Mobile",
+            "Email": "Email",
+            "Fax": "Fax"
+        }
+    }
+}

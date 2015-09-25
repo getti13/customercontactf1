@@ -1,0 +1,10 @@
+{
+    "customercontactApp": {
+        "Country" : {
+            "null": "",
+            "Germany": "Germany",
+            "Ethiopia": "Ethiopia",
+            "Italy": "Italy"
+        }
+    }
+}

@@ -1,0 +1,118 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myContactDetailsLabel" translate="customercontactApp.contactDetails.home.createOrEditLabel">Create or edit a ContactDetails</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="contactDetails.id" readonly>
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.firstName" for="field_firstName">FirstName</label>
+            <input type="text" class="form-control" name="firstName" id="field_firstName"
+                    ng-model="contactDetails.firstName"
+                    >
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.middleName" for="field_middleName">MiddleName</label>
+            <input type="text" class="form-control" name="middleName" id="field_middleName"
+                    ng-model="contactDetails.middleName"
+                    >
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.lastName" for="field_lastName">LastName</label>
+            <input type="text" class="form-control" name="lastName" id="field_lastName"
+                    ng-model="contactDetails.lastName"
+                    >
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.telephone" for="field_telephone">Telephone</label>
+            <input type="number" class="form-control" name="telephone" id="field_telephone"
+                    ng-model="contactDetails.telephone"
+                    >
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.shebaMiles" for="field_shebaMiles">ShebaMiles</label>
+            <input type="checkbox" class="form-control" name="shebaMiles" id="field_shebaMiles"
+                    ng-model="contactDetails.shebaMiles"
+                    >
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.email" for="field_email">Email</label>
+            <input type="text" class="form-control" name="email" id="field_email"
+                    ng-model="contactDetails.email"
+                    >
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.fax" for="field_fax">Fax</label>
+            <input type="text" class="form-control" name="fax" id="field_fax"
+                    ng-model="contactDetails.fax"
+                    >
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.preferedContact" for="field_preferedContact">PreferedContact</label>
+            <select class="form-control" name="preferedContact" ng-model="contactDetails.preferedContact" id="field_preferedContact">
+                <option value="Telephone" translate="customercontactApp.PreferedContact.Telephone">Telephone</option>
+                <option value="Mobile" translate="customercontactApp.PreferedContact.Mobile">Mobile</option>
+                <option value="Email" translate="customercontactApp.PreferedContact.Email">Email</option>
+                <option value="Fax" translate="customercontactApp.PreferedContact.Fax">Fax</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.preferedLanguage" for="field_preferedLanguage">PreferedLanguage</label>
+            <select class="form-control" name="preferedLanguage" ng-model="contactDetails.preferedLanguage" id="field_preferedLanguage">
+                <option value="German" translate="customercontactApp.PreferedLanguage.German">German</option>
+                <option value="Amharic" translate="customercontactApp.PreferedLanguage.Amharic">Amharic</option>
+                <option value="English" translate="customercontactApp.PreferedLanguage.English">English</option>
+                <option value="Tigrgna" translate="customercontactApp.PreferedLanguage.Tigrgna">Tigrgna</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.country" for="field_country">Country</label>
+            <select class="form-control" name="country" ng-model="contactDetails.country" id="field_country">
+                <option value="Germany" translate="customercontactApp.Country.Germany">Germany</option>
+                <option value="Ethiopia" translate="customercontactApp.Country.Ethiopia">Ethiopia</option>
+                <option value="Italy" translate="customercontactApp.Country.Italy">Italy</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.address" for="field_address">Address</label>
+            <input type="text" class="form-control" name="address" id="field_address"
+                    ng-model="contactDetails.address"
+                    >
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.city" for="field_city">City</label>
+            <input type="text" class="form-control" name="city" id="field_city"
+                    ng-model="contactDetails.city"
+                    >
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.zipcode" for="field_zipcode">Zipcode</label>
+            <input type="number" class="form-control" name="zipcode" id="field_zipcode"
+                    ng-model="contactDetails.zipcode"
+                    >
+        </div>
+        <div class="form-group">
+            <label translate="customercontactApp.contactDetails.comment" for="field_comment">Comment</label>
+            <input type="text" class="form-control" name="comment" id="field_comment"
+                    ng-model="contactDetails.comment"
+                    >
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

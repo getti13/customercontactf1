@@ -1,0 +1,11 @@
+{
+    "customercontactApp": {
+        "PreferedLanguage" : {
+            "null": "",
+            "German": "German",
+            "Amharic": "Amharic",
+            "English": "English",
+            "Tigrgna": "Tigrgna"
+        }
+    }
+}

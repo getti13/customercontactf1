@@ -1,0 +1,34 @@
+{
+    "customercontactApp": {
+        "contactDetails" : {
+            "home": {
+                "title": "List Of Customer Contacts",
+                "createLabel": "Create a new Customer Contact",
+                "createOrEditLabel": "Create or edit a Customer Contact"
+            },
+            "created": "A new Customer Contact is created with identifier {{ param }}",
+            "updated": "A Customer Contact is updated with identifier {{ param }}",
+            "deleted": "A Customer Contact is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Customer Contact {{ id }}?"
+            },
+            "detail": {
+                "title": "Customer Contact"
+            },
+            "firstName": "First Name",
+            "middleName": "Middle Name",
+            "lastName": "Last Name",
+            "telephone": "Telephone",
+            "shebaMiles": "Sheba Miles",
+            "email": "Email",
+            "fax": "Fax",
+            "preferedContact": "Prefered Contact",
+            "preferedLanguage": "Prefered Language",
+            "country": "Country",
+            "address": "Address",
+            "city": "City",
+            "zipcode": "Zipcode",
+            "comment": "Comment"
+        }
+    }
+}

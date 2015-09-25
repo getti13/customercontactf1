@@ -1,0 +1,134 @@
+
+<div>
+    <h2><span translate="customercontactApp.contactDetails.detail.title">ContactDetails</span> {{contactDetails.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.firstName">FirstName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.firstName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.middleName">MiddleName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.middleName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.lastName">LastName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.lastName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.telephone">Telephone</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.telephone}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.shebaMiles">ShebaMiles</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.shebaMiles}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.email">Email</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.email}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.fax">Fax</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.fax}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.preferedContact">PreferedContact</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'customercontactApp.PreferedContact.' + contactDetails.preferedContact}}">{{contactDetails.preferedContact}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.preferedLanguage">PreferedLanguage</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'customercontactApp.PreferedLanguage.' + contactDetails.preferedLanguage}}">{{contactDetails.preferedLanguage}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.country">Country</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'customercontactApp.Country.' + contactDetails.country}}">{{contactDetails.country}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.address">Address</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.address}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.city">City</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.city}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.zipcode">Zipcode</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.zipcode}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="customercontactApp.contactDetails.comment">Comment</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{contactDetails.comment}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

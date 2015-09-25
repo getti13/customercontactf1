@@ -1,0 +1,85 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "firstName",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "middleName",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "lastName",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "telephone",
+            "fieldType": "Integer",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "shebaMiles",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "fax",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "preferedContact",
+            "fieldType": "PreferedContact",
+            "fieldValues": "Telephone,Mobile,Email,Fax"
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "preferedLanguage",
+            "fieldType": "PreferedLanguage",
+            "fieldValues": "German,Amharic,English,Tigrgna"
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "country",
+            "fieldType": "Country",
+            "fieldValues": "Germany,Ethiopia,Italy"
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 12,
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 13,
+            "fieldName": "zipcode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 14,
+            "fieldName": "comment",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20150923225332",
+    "dto": "no",
+    "pagination": "pagination"
+}

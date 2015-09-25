@@ -1,0 +1,53 @@
+<div ng-cloak>
+
+    <div class="row">
+
+			<div class="col-md-4"> 
+<!-- 			            <span class="hipster img-responsive img-rounded"></span>  -->
+  <div class="hipster img-responsive img-rounded"></div> 
+    <p translate="main.question">
+                If you have any question on Abessinia travel:
+            </p>
+
+            <ul>
+                <li><a href="http://abessinia.com/" target="_blank" translate="main.link.homepage">Abessinia travel homepage</a></li>
+                <li><a href="http://abessinia.com/contact/" target="_blank"  translate="main.link.contact">contact Abessinia travel</a></li>
+            </ul>
+  
+			 </div> 
+ 
+       
+        <div class="col-md-4">
+            <h1 class="mainheader" translate="main.title">Abessinia travel & more GmbH</h1>
+            <p class="lead" translate="main.subtitle">Customer Contact Management</p>
+
+            <div ng-switch="isAuthenticated()">
+                <div class="alert alert-success" ng-switch-when="true" translate="main.logged.message" translate-values="{username: '{{account.login}}'}">
+                    You are logged in as user "{{account.login}}".
+                </div>
+
+                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.authenticated">
+                    If you want to <a class="alert-link" href="#/login">Authenticate</a>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").
+                </div>
+
+                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.register">
+                    You don't have an account yet? <a class="alert-link" href="#/register">Register a new account</a>
+                </div>
+            </div>
+
+<!--             <p translate="main.question"> -->
+<!--                 If you have any question on Abessinia travel: -->
+<!--             </p> -->
+
+<!--             <ul> -->
+<!--                 <li><a href="http://abessinia.com/" target="_blank" translate="main.link.homepage">Abessinia travel homepage</a></li> -->
+<!--                 <li><a href="http://abessinia.com/contact/" target="_blank"  translate="main.link.contact">contact Abessinia travel</a></li> -->
+<!--             </ul> -->
+        </div>
+        
+           <div class="col-md-4"> 
+			            <span class="hipster2 img-responsive img-rounded"></span> 
+		   </div>     
+    </div>
+
+</div>
